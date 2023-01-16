@@ -1,0 +1,221 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif;
+}
+
+.blind {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+header{
+    height: 150px;
+}
+
+.center-align{
+margin: 0 auto; 
+width: 1080px;
+}
+
+#header-search{
+    clear: both;
+}
+
+#header-search h1{
+    width: 222px; 
+    height: 52px;
+    display: inline-block;
+    background-image: url(https://s.pstatic.net/static/www/img/uit/sp_main_947f65.png);
+    background-position: 0 -158px;
+    background-size: 442px 428px;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    content: '';
+    box-sizing: border-box;
+    top: -6px;
+    position: relative;
+}
+
+#header-top{
+    float: right;
+}
+
+#header-top span{
+    font-size: 11px;
+    color: #404040;
+    letter-spacing: -1px;
+}
+
+#header-search a{
+    text-decoration: none;
+}
+
+/*
+#header-search h1{
+    자손선택자(자손선택을 더 많이씀)
+}
+*/
+
+#header-search h2{
+    display: none;
+}
+
+#header-search fieldset{
+    margin-left: 20px;
+    /* padding-left: 12px;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    padding-right: 0; */
+    padding: 12px 0 12px 10px;
+    /* (시계방향) */
+    width: 586px;
+    height: 56px;
+    display: inline-block;
+    border: 2px solid #19ce60;
+    /* (hex color) */
+    box-sizing: border-box;
+    vertical-align: middle;
+    position: relative;
+}
+
+#header-search fieldset input{
+    border: none;
+    outline: none;
+    vertical-align: top;
+    width: 444px;
+    height: 24px;
+    padding: 13px 15px;
+    margin: 1px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+#header-search fieldset button{
+    width: 56px;
+    height: 56px;
+    padding: 0;
+    border: none;
+    background: #19ce60;
+    vertical-align: middle;
+    position: absolute;
+    right: -2px;
+    top: -2px;
+}
+
+#header-search fieldset button .ico_search_submit{
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background-size: 442px 428px;
+    background-position: -420px -24px;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    background-image: url(https://s.pstatic.net/static/www/img/uit/sp_main_947f65.png);
+}
+
+#search-keyboard{
+    position: absolute;
+    top: 50%;
+    left: 83%;
+    display: inline-block;
+    width: 20px;
+    height: 12px;
+    background-position: -398px -267px;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin: -6px 0 0 -10px;
+    background-image:url(https://s.pstatic.net/static/www/img/uit/sp_main_947f65.png);
+    background-size: 442px 428px;
+}
+
+#search-history{
+    position: absolute;
+    top: 44%;
+    left: 87%;
+    display: inline-block;
+    width: 10px;
+    height: 5px;
+    background-position: -158px -151px;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    background-image:url(https://s.pstatic.net/static/www/img/uit/sp_main_947f65.png);
+    background-size: 442px 428px;
+}
+
+nav {
+    height: 46px;
+    border-top: 1px solid #f1f3f6;
+    position: relative;
+    border-bottom: 1px solid #f1f3f6;
+}
+
+nav ul{
+    margin: 0;
+    padding: 16px 0 0 4px;
+    list-style: none;
+    display: inline-block;
+}
+
+nav li{
+    display: inline-block;
+}
+/* nth-child는 유지보수가 매우 힘들어서 실무에서는 잘 안 쓴다. */
+nav li span:first-child{
+    height: 16px;
+    display: inline-block;
+    background-image: url(./sp_nav.png);
+    background-repeat: no-repeat;
+    margin-left: 14px;
+}
+
+nav li:first-child span:first-child{
+    width: 25px;
+    background-position: 0 -285px;
+    margin-left: 0;
+}
+
+nav li:nth-child(2) span:first-child{
+    width: 27px;
+    background-position: -279px -52px;
+}
+
+nav li:nth-child(3) span:first-child{
+    width: 40px;
+    background-position: -100px -182px;
+}
+
+#search-ranking{
+    position: absolute;
+    top: 12px;
+    right: 100px;
+}
+
+main{
+    /* margin collapsing을 해결하기위해서 */
+    display: inline-block;
+    width: 100%;
+}
+
+#main_ad{
+    display: inline-block;
+    width: 740px;
+    height: 120px;
+    background: #404040;
+}
+
+#main_login{
+    display: inline-block;
+    width: 340px;
+    height: 120px;
+    vertical-align: top;
+}
